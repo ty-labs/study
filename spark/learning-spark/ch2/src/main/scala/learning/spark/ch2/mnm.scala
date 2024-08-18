@@ -1,4 +1,4 @@
-package main.learning.spark.chapter2
+package main.learning.spark.ch2
 
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
@@ -6,7 +6,7 @@ import org.apache.spark.sql.functions._
 /** Usage: MnMCount <mnm_dataset>
   */
 object MnMCount {
-  def main(args: Array[String]) {
+  def main(args: Array[String]): Unit = {
     val t = 1
     val spark = SparkSession.builder
       .appName("MnMCount")
